@@ -1,8 +1,8 @@
 <!DOCTYPE HTML>
 <!--
-        Editorial by HTML5 UP
-        html5up.net | @ajlkn
-        Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+    Editorial by HTML5 UP
+    html5up.net | @ajlkn
+    Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
 <html>
     <head>
@@ -17,7 +17,6 @@
         <?php echo $styles; ?>
     </head>
     <body class="is-preload">
-
         <!-- Wrapper -->
         <div id="wrapper">
             <?php echo $block[ 'page' ]; ?>
@@ -25,7 +24,6 @@
                 <?php echo $block[ 'page_bottom' ]; ?>
             <?php endif; ?>
         </div>
-
         <!-- Scripts -->
         <script src="<?php echo $base_theme; ?>assets/js/jquery.min.js"></script>
         <?php echo $scripts; ?>

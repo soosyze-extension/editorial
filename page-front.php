@@ -6,9 +6,9 @@
         <header id="header">
             <a href="<?php echo $base_path; ?>">
                 <?php if( $logo ): ?>
-                    <img src="<?php echo $logo; ?>" class="logo" alt="Logo site">
+                    <img src="<?php echo $logo; ?>" class="logo home" alt="Logo site">
                 <?php endif; ?>
-                <strong><?php echo $title; ?></strong>
+                <h1><?php echo $title; ?></h1>
             </a>							
             <ul class="icons">
                 <li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
@@ -22,7 +22,7 @@
         <!-- Content -->
         <section>
             <header class="main">
-                <h1><?php echo $title_main; ?></h1>
+                <h2><?php echo $title_main; ?></h2>
             </header>
 
             <?php if( !empty($block[ 'messages' ]) ): ?>

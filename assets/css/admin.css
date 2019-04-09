@@ -128,8 +128,9 @@
         font-weight: 600;
     }
     .responsive tbody tr th{ 
-        background-color:#20222d;
+        background-color:#3d4449;
         color: #fff;
         text-align: center;
+        padding: .75em;
     }
 }

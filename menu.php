@@ -2,6 +2,7 @@
     <header class="major">
         <h2>Menu</h2>
     </header>
+
     <ul>
         <?php foreach ($menu as $link): ?>
 
