@@ -2,7 +2,7 @@
 <section>
     <?php if ($nodes): ?>
         <div class="posts">
-            <?php foreach ($nodes as $key => $node): ?>
+            <?php foreach ($nodes as $node): ?>
                 <?php $node[ 'field' ] = unserialize($node[ 'field' ]); ?>
 
                 <article>
@@ -10,7 +10,7 @@
                     <small><?php echo date('F d, Y', $node[ 'created' ]); ?></small>
                     <p><?php echo $node[ 'field' ][ 'summary' ]; ?></p>
                     <ul class="actions">
-                        <li><a href="<?php echo $node[ 'link_view' ]; ?>"" class="button">En savoir plus</a></li>
+                        <li><a href="<?php echo $node[ 'link_view' ]; ?>" class="button">En savoir plus</a></li>
                     </ul>
                 </article>
             <?php endforeach; ?>

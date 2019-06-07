@@ -1,6 +1,4 @@
-@import url(font-awesome.min.css);
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,400italic,600italic|Roboto+Slab:400,700");
-
 /*
         Editorial by HTML5 UP
         html5up.net | @ajlkn
@@ -1981,16 +1979,6 @@ input[type="radio"] + label {
 
 input[type="checkbox"] + label:before,
 input[type="radio"] + label:before {
-    -moz-osx-font-smoothing: grayscale;
-    -webkit-font-smoothing: antialiased;
-    font-family: FontAwesome;
-    font-style: normal;
-    font-weight: normal;
-    text-transform: none !important;
-}
-
-input[type="checkbox"] + label:before,
-input[type="radio"] + label:before {
     background: #ffffff;
     border-radius: 0.375em;
     border: solid 1px rgba(210, 215, 217, 0.75);
@@ -2010,7 +1998,7 @@ input[type="radio"]:checked + label:before {
     background: #3d4449;
     border-color: #3d4449;
     color: #ffffff;
-    content: '\f00c';
+    content: '\2714';
 }
 
 input[type="checkbox"]:focus + label:before,
@@ -2074,15 +2062,6 @@ input[type="radio"] + label:before {
     text-decoration: none;
     border-bottom: none;
     position: relative;
-}
-
-.icon:before {
-    -moz-osx-font-smoothing: grayscale;
-    -webkit-font-smoothing: antialiased;
-    font-family: FontAwesome;
-    font-style: normal;
-    font-weight: normal;
-    text-transform: none !important;
 }
 
 .icon > .label {
@@ -2308,7 +2287,7 @@ ul.icons li .icon:before {
     font-size: 1.25em;
 }
 
-/* Contact */
+/* SoosyzeCore\Contact\ */
 
 ul.contact {
     list-style: none;
@@ -2321,15 +2300,6 @@ ul.contact li {
     margin: 1.5em 0 0 0;
     padding: 1.5em 0 0 3em;
     position: relative;
-}
-
-ul.contact li:before {
-    -moz-osx-font-smoothing: grayscale;
-    -webkit-font-smoothing: antialiased;
-    font-family: FontAwesome;
-    font-style: normal;
-    font-weight: normal;
-    text-transform: none !important;
 }
 
 ul.contact li:before {
@@ -3091,45 +3061,6 @@ button:disabled,
 }
 
 /* Sidebar */
-
-#search form {
-    text-decoration: none;
-    position: relative;
-}
-
-#search form:before {
-    -moz-osx-font-smoothing: grayscale;
-    -webkit-font-smoothing: antialiased;
-    font-family: FontAwesome;
-    font-style: normal;
-    font-weight: normal;
-    text-transform: none !important;
-}
-
-#search form:before {
-    -moz-transform: scaleX(-1);
-    -webkit-transform: scaleX(-1);
-    -ms-transform: scaleX(-1);
-    transform: scaleX(-1);
-    color: #7f888f;
-    content: '\f002';
-    cursor: default;
-    display: block;
-    font-size: 1.5em;
-    height: 2em;
-    line-height: 2em;
-    opacity: 0.325;
-    position: absolute;
-    right: 0;
-    text-align: center;
-    top: 0;
-    width: 2em;
-}
-
-#search form input[type="text"] {
-    padding-right: 2.75em;
-}
-
 #sidebar {
     -moz-flex-grow: 0;
     -webkit-flex-grow: 0;
@@ -3148,33 +3079,27 @@ button:disabled,
     position: relative;
     width: 26em;
 }
-
 #sidebar h2 {
     font-size: 1.3888888889em;
 }
-
 #sidebar > .inner {
     padding: 2.2222222222em 2.2222222222em 2.4444444444em 2.2222222222em ;
     position: relative;
     width: 26em;
 }
-
 #sidebar > .inner > * {
     border-bottom: solid 2px rgba(210, 215, 217, 0.75);
     margin: 0 0 3.5em 0;
     padding: 0 0 3.5em 0;
 }
-
 #sidebar > .inner > * > :last-child {
     margin-bottom: 0;
 }
-
 #sidebar > .inner > *:last-child {
     border-bottom: 0;
     margin-bottom: 0;
     padding-bottom: 0;
 }
-
 #sidebar > .inner > .alt {
     background-color: #eff1f2;
     border-bottom: 0;
@@ -3182,7 +3107,6 @@ button:disabled,
     padding: 2.2222222222em;
     width: calc(100% + 4.4444444444em);
 }
-
 #sidebar .toggle {
     text-decoration: none;
     -moz-transition: left 0.5s ease;
@@ -3205,15 +3129,15 @@ button:disabled,
     z-index: 10000;
 }
 #sidebar .toggle:before {
-    -moz-osx-font-smoothing: grayscale;
-    -webkit-font-smoothing: antialiased;
-    font-family: FontAwesome;
     font-style: normal;
-    font-weight: normal;
-    text-transform: none !important;
+    font-variant: normal;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
 }
 #sidebar .toggle:before {
-    content: '\f0c9';
+    content: "\f0c9";
+    font-family: 'Font Awesome\ 5 Free';
+    font-weight: 900;
     font-size: 2rem;
     height: inherit;
     left: 0;
@@ -3253,7 +3177,6 @@ button:disabled,
     #sidebar.inactive {
         margin-left: -24em;
     }
-
 }
 
 @media screen and (max-width: 1280px) {
@@ -3294,7 +3217,6 @@ button:disabled,
     body.is-preload #sidebar {
         display: none;
     }
-
 }
 
 @media screen and (max-width: 736px) {
@@ -3513,7 +3435,7 @@ button:disabled,
 #menu ul a.opener:before, #menu ul span.opener:before {
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
-    font-family: FontAwesome;
+    font-family: "Font Awesome 5 Free";
     font-style: normal;
     font-weight: normal;
     text-transform: none !important;

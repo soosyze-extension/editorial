@@ -1,13 +1,84 @@
+/* IMAGES */
+.img-thumbnail{
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    display: inline-block;
+    height: auto;
+    line-height: 1.4;
+    padding: 4px;
+}
+img, .img-responsive {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
 .btn.btn-action {
     margin-right: 5px;
 }
+.btn-toogle-password {
+    background: none;
+    color: #337ab7;
+    font-weight: 600;
+    padding: 0 8px;
+    z-index: 9;
+}
+.btn-toogle-password i {
+    width: 22px;
+}
+.sticky nav{
+    position: initial;
+    top: 4em;
+}
+.form-group-flex{
+    display: initial;
+}
+@media (min-width: 992px){
+    .sticky nav{
+        position: -webkit-sticky;
+        position: sticky;
+    }
+    .form-group-flex{
+        display: flex;
+    }
+}
+
 /* --------------------------- */
 /* ---------- FILE ----------- */
 /* --------------------------- */
 .input-file-img {
-    width: auto;
     max-height: 200px;
+    width: auto;
 }
+input.form-file-name,
+input.form-file-reset{
+    vertical-align: middle;
+}
+input.form-file-name{
+    -webkit-border-top-right-radius: 0;
+    -webkit-border-bottom-right-radius: 0;
+    -moz-border-radius-topright: 0;
+    -moz-border-radius-bottomright: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-right: 0;
+}
+input.form-file-reset{
+    -webkit-border-top-left-radius: 0;
+    -webkit-border-bottom-left-radius: 0;
+    -moz-border-radius-topleft: 0;
+    -moz-border-radius-bottomleft: 0;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-left: 0;
+    font-weight: bold;
+}
+input.form-file-reset[disabled] {
+    cursor: not-allowed;
+    pointer-events: visible;
+}
+
+
 /* --------------------------- */
 /* ---------- USER ----------- */
 /* --------------------------- */
@@ -133,4 +204,156 @@
         text-align: center;
         padding: .75em;
     }
+}
+
+
+/* --------------------------- */
+/* -------- TOOLTIP ---------- */
+/* --------------------------- */
+label[data-tooltip] {
+    display: block;
+}
+label[data-tooltip] {
+    cursor: help;
+    position: relative;
+}
+label[data-tooltip]:before,
+label[data-tooltip]:after {
+    opacity: 0;
+    visibility: hidden;
+    z-index: 9999;
+}
+label[data-tooltip]:before {
+    bottom: 100%;
+    background: #20222d;
+    background: rgba(32, 34, 45, 0.8);
+    color: #fff;
+    content: attr(data-tooltip);
+    font-size: 14px;
+    left: -10px;
+    margin-bottom: 9px;
+    padding: 8px 10px;
+    position: absolute;
+}
+label[data-tooltip]:before {
+    transform: none;
+}
+/* Triangle */
+label[data-tooltip]:after {
+    border-top: 10px solid #20222d;
+    border-right: 10px solid transparent;
+    border-left: 10px solid transparent;
+    bottom: 100%;
+    content: "";
+    left: 0;
+    position: absolute;
+}
+label[data-tooltip]:hover:before,
+label[data-tooltip]:hover:after {
+    opacity: 1;
+    transition: opacity .5s;
+    visibility: visible;
+}
+
+
+/* --------------------------- */
+/* -------- MODULES ---------- */
+/* --------------------------- */
+.module-icon {
+    width: 4em;
+    background: #e6e7f4;
+    background-color: rgb(230, 231, 244);
+    color: #666999;
+    font-size: 1em;
+    display: inline-block;
+    line-height: 2em;
+    text-align: center;
+    padding: 1em;
+    border-radius: 4em;
+    font-size: 1em;
+}
+.table > tbody > tr > th{
+    padding: 0;
+}
+@media (max-width: 768px) {
+    .module-icon {
+        width: 100%;
+        border-radius: 0;
+    }
+}
+
+
+/* --------------------------- */
+/* --------- NAVBAR ---------- */
+/* --------------------------- */
+.navbar-right {
+    float: right !important;
+    margin-right: -15px;
+}
+.navbar-nav {
+    float: left;
+    margin: 0;
+    margin-right: 0px;
+}
+.navbar-nav {
+    margin: 7.5px -15px;
+}
+.nav {
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+.navbar-nav > li {
+    float: left;
+}
+.nav > li {
+    position: relative;
+    display: block;
+}
+.navbar-nav > li > a {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.navbar-nav > li > a {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    line-height: 20px;
+}
+.nav > li > a {
+    position: relative;
+    display: block;
+    padding: 10px 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.navbar {
+    position: relative;
+    min-height: 38px;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+}
+#navbar-files{
+    background: #333;
+    margin-bottom: 1em;
+}
+#navbar-files .btn{
+    background-color: #333;
+    color: #fff;
+    padding:1em;
+    font-weight: bold;
+}
+#navbar-files .btn:hover{
+    background: #44495e;
+}
+#navbar-files .btn.end:hover{
+    background: #333;
+    cursor: initial;
+}
+#navbar-files .navbar-nav,
+#navbar-files .navbar-right{
+    margin: 0;
 }

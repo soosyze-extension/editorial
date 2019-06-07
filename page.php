@@ -5,17 +5,17 @@
         <!-- Header -->
         <header id="header">
             <a href="<?php echo $base_path; ?>">
-                <?php if( $logo ): ?>
+                <?php if ($logo): ?>
                     <img src="<?php echo $logo; ?>" class="logo" alt="Logo site">
                 <?php endif; ?>
                 <strong><?php echo $title; ?></strong>
             </a>							
             <ul class="icons">
-                <li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-                <li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
-                <li><a href="#" class="icon fa-snapchat-ghost"><span class="label">Snapchat</span></a></li>
-                <li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
-                <li><a href="#" class="icon fa-medium"><span class="label">Medium</span></a></li>
+                <li><a href="#" class="icon fab fa-twitter"><span class="label">Twitter</span></a></li>
+                <li><a href="#" class="icon fab fa-facebook"><span class="label">Facebook</span></a></li>
+                <li><a href="#" class="icon fab fa-snapchat-ghost"><span class="label">Snapchat</span></a></li>
+                <li><a href="#" class="icon fab fa-instagram"><span class="label">Instagram</span></a></li>
+                <li><a href="#" class="icon fab fa-medium"><span class="label">Medium</span></a></li>
             </ul>
         </header>
 
@@ -25,7 +25,7 @@
                 <h1><?php echo $title_main; ?></h1>
             </header>
 
-            <?php if( !empty($block[ 'messages' ]) ): ?>
+            <?php if (!empty($block[ 'messages' ])): ?>
                 <?php echo $block[ 'messages' ]; ?>
             <?php endif; ?>
             <?php echo $block[ 'content' ]; ?>
@@ -44,12 +44,18 @@
             <header class="major">
                 <h2>Get in touch</h2>
             </header>
-            <p>Sed varius enim lorem ullamcorper dolore aliquam aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin sed aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
+            <p>
+                Sed varius enim lorem ullamcorper dolore aliquam aenean ornare velit lacus, 
+                ac varius enim lorem ullamcorper dolore. Proin sed aliquam facilisis ante interdum. 
+                Sed nulla amet lorem feugiat tempus aliquam.
+            </p>
             <ul class="contact">
-                <li class="fa-envelope-o"><a href="#">information@untitled.tld</a></li>
-                <li class="fa-phone">(000) 000-0000</li>
-                <li class="fa-home">1234 Somewhere Road #8254<br />
-                    Nashville, TN 00000-0000</li>
+                <li class="fa fa-envelope"><a href="#">information@untitled.tld</a></li>
+                <li class="fa fa-phone">(000) 000-0000</li>
+                <li class="fa fa-home">
+                    1234 Somewhere Road #8254<br/>
+                    Nashville, TN 00000-0000
+                </li>
             </ul>
         </section>
 
