@@ -25,10 +25,10 @@
                 <h2><?php echo $title_main; ?></h2>
             </header>
 
-            <?php if (!empty($block[ 'messages' ])): ?>
-                <?php echo $block[ 'messages' ]; ?>
+            <?php if (!empty($section[ 'messages' ])): ?>
+                <?php echo $section[ 'messages' ]; ?>
             <?php endif; ?>
-            <?php echo $block[ 'content' ]; ?>
+            <?php echo $section[ 'content' ]; ?>
         </section>
     </div>
 </div>
@@ -37,7 +37,12 @@
 <div id="sidebar">
     <div class="inner">
         <!-- Menu -->
-        <?php echo $block[ 'main_menu' ]; ?>
+        <nav id="menu">
+            <header class="major">
+                <h2>Menu</h2>
+            </header>
+            <?php echo $section[ 'main_menu' ]; ?>
+        </nav>
 
         <!-- Section -->
         <section>
@@ -58,7 +63,9 @@
             </ul>
         </section>
 
-        <?php echo $block[ 'second_menu' ]; ?>
+        <nav id="second_menu">
+            <?php echo $section[ 'second_menu' ]; ?>
+        </nav>
 
         <!-- Footer -->
         <footer id="footer">

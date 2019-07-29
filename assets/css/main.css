@@ -3448,6 +3448,7 @@ button:disabled,
     color: #9fa3a6;
     content: '\f078';
     position: absolute;
+    font-weight: 900;
     right: 0;
 }
 #menu ul a.opener:hover:before, #menu ul span.opener:hover:before {

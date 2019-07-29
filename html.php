@@ -22,9 +22,9 @@
     <body class="is-preload">
         <!-- Wrapper -->
         <div id="wrapper">
-            <?php echo $block[ 'page' ]; ?>
-            <?php if (isset($block[ 'page_bottom' ])): ?>
-                <?php echo $block[ 'page_bottom' ]; ?>
+            <?php echo $section[ 'page' ]; ?>
+            <?php if (isset($section[ 'page_bottom' ])): ?>
+                <?php echo $section[ 'page_bottom' ]; ?>
             <?php endif; ?>
         </div>
         <!-- Scripts -->
