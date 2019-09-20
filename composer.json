@@ -1,0 +1,19 @@
+{
+    "name": "soosyze-extension/editorial",
+    "type": "soosyze-theme",
+    "description": "Say hello to Editorial, a blog/magazine-ish template built around a toggleable \"locking\" sidebar (scroll down to see what I mean) and an accordion-style menu.",
+    "version": "1.0",
+    "extra": {
+        "soosyze-theme": {
+            "sections": [
+                "header",
+                "sidebar",
+                "content_header",
+                "content_footer",
+                "footer",
+                "footer_first",
+                "footer_second"
+            ]
+        }
+    }
+}

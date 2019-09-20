@@ -28,7 +28,13 @@
             <?php if (!empty($section[ 'messages' ])): ?>
                 <?php echo $section[ 'messages' ]; ?>
             <?php endif; ?>
+            <?php if (!empty($section[ 'content_header' ])): ?>
+                <?php echo $section[ 'content_header' ]; ?>
+            <?php endif; ?>
             <?php echo $section[ 'content' ]; ?>
+            <?php if (!empty($section[ 'content_footer' ])): ?>
+                <?php echo $section[ 'content_footer' ]; ?>
+            <?php endif; ?>
         </section>
     </div>
 </div>
@@ -44,26 +50,29 @@
             <?php echo $section[ 'main_menu' ]; ?>
         </nav>
 
+        <?php if (!empty($section[ 'sidebar' ])): ?>
+            <!-- Section -->
+            <section>
+                <?php echo $section[ 'sidebar' ]; ?>
+            </section>
+        <?php endif; ?>
+
+        <?php if (!empty($section[ 'footer_first' ])): ?>
         <!-- Section -->
         <section>
-            <header class="major">
-                <h2>Get in touch</h2>
-            </header>
-            <p>
-                Sed varius enim lorem ullamcorper dolore aliquam aenean ornare velit lacus, 
-                ac varius enim lorem ullamcorper dolore. Proin sed aliquam facilisis ante interdum. 
-                Sed nulla amet lorem feugiat tempus aliquam.
-            </p>
-            <ul class="contact">
-                <li class="fa fa-envelope"><a href="#">information@untitled.tld</a></li>
-                <li class="fa fa-phone">(000) 000-0000</li>
-                <li class="fa fa-home">
-                    1234 Somewhere Road #8254<br/>
-                    Nashville, TN 00000-0000
-                </li>
-            </ul>
+            <?php echo $section[ 'footer_first' ]; ?>
+
+        </section>
+        <?php endif; ?>
+
+        <?php if (!empty($section[ 'footer_second' ])): ?>
+        <!-- Section -->
+        <section>
+            <?php echo $section[ 'footer_second' ]; ?>
+
         </section>
 
+        <?php endif; ?>
         <nav id="second_menu">
             <?php echo $section[ 'second_menu' ]; ?>
         </nav>
@@ -72,9 +81,12 @@
         <footer id="footer">
             <p class="copyright">&copy; Untitled. All rights reserved. <br>
                 Demo Images: <a href="https://unsplash.com">Unsplash</a>. <br>
-                Design: <a href="https://html5up.net">HTML5 UP</a>. <br>
-                Power by <a href="https://soosyze.com">SoosyzeCMS</a>.
+                Design: <a href="https://html5up.net">HTML5 UP</a>.
             </p>
+            <?php if (!empty($section[ 'footer' ])): ?>
+                <?php echo $section[ 'footer' ]; ?>
+
+            <?php endif; ?>
         </footer>
     </div>
 </div>
