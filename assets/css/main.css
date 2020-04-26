@@ -2928,3 +2928,12 @@ table{
 #header > a{
     border: 0;
 }
+
+.article_date_time{
+    margin-bottom: 1.5em;
+}
+.article_img img{
+    display: block;
+    margin: 0px auto;
+    margin-bottom: 1.5em;
+}

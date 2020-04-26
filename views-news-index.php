@@ -1,16 +1,19 @@
 
 <section>
-    <?php if ($nodes): ?>
+    <?php if ($news): ?>
         <div class="posts">
-            <?php foreach ($nodes as $node): ?>
-                <?php $node[ 'field' ] = unserialize($node[ 'field' ]); ?>
+            <?php foreach ($news as $new): ?>
 
                 <article>
-                    <h3><a href="<?php echo $node[ 'link_view' ]; ?>"><?php echo $node[ 'title' ]; ?></a></h3>
-                    <small><?php echo date('F d, Y', $node[ 'created' ]); ?></small>
-                    <p><?php echo $node[ 'field' ][ 'summary' ]; ?></p>
+                    <a class="image" href="<?php echo $new[ 'link_view' ]; ?>">
+                        <img src="<?php echo $new[ 'field' ][ 'image' ][ 'field_value' ]; ?>" alt="Illustration <?php echo $new[ 'title' ]; ?>">
+                    </a>
+                    <h3><a href="<?php echo $new[ 'link_view' ]; ?>"><?php echo $new[ 'title' ]; ?></a></h3>
+                    <small><?php echo date('F d, Y', $new[ 'date_created' ]); ?></small>
+                    <small> ~<?php echo $new[ 'field' ][ 'reading_time' ][ 'field_value' ] . ' ' . t('minute(s)'); ?></small>
+                    <p><?php echo $new[ 'field' ][ 'summary' ][ 'field_display' ]; ?></p>
                     <ul class="actions">
-                        <li><a href="<?php echo $node[ 'link_view' ]; ?>" class="button">En savoir plus</a></li>
+                        <li><a href="<?php echo $new[ 'link_view' ]; ?>" class="button">En savoir plus</a></li>
                     </ul>
                 </article>
             <?php endforeach; ?>
@@ -22,3 +25,9 @@
         <?php endif; ?>
     </div>
 </section>
+<div class="col-12">
+    <?php echo $paginate; ?>
+</div>
+<div class="col-12">
+    <a type="application/rss+xml" href="<?php echo $link_rss; ?>" title="Flux RSS"><i class="fa fa-rss-square" aria-hidden="true"></i></a>
+</div>
