@@ -17,13 +17,14 @@
                     </ul>
                 </article>
             <?php endforeach; ?>
-        <?php else: ?> 
 
-            <div class="col-12">
-                <p><?php echo $default; ?></p>
-            </div>
-        <?php endif; ?>
-    </div>
+        </div>
+    <?php else: ?> 
+
+        <div class="col-12">
+            <p><?php echo $default; ?></p>
+        </div>
+    <?php endif; ?>
 </section>
 <div class="col-12">
     <?php echo $paginate; ?>
