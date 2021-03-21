@@ -8,8 +8,8 @@
                 <?php if ($logo): ?>
                     <img src="<?php echo $logo; ?>" class="logo home" alt="Logo site">
                 <?php endif; ?>
-                <h1><?php echo $title; ?></h1>
-            </a>							
+                <h1><?php echo htmlspecialchars($title); ?></h1>
+            </a>
             <ul class="icons">
                 <li><a href="#" class="icon fab fa-twitter"><span class="label">Twitter</span></a></li>
                 <li><a href="#" class="icon fab fa-facebook"><span class="label">Facebook</span></a></li>
@@ -22,7 +22,7 @@
         <!-- Content -->
         <section>
             <header class="main">
-                <h2><?php echo $title_main; ?></h2>
+                <h2><?php echo htmlspecialchars($title_main); ?></h2>
             </header>
 
             <?php if (!empty($section[ 'messages' ])): ?>
@@ -31,6 +31,8 @@
             <?php if (!empty($section[ 'content_header' ])): ?>
                 <?php echo $section[ 'content_header' ]; ?>
             <?php endif; ?>
+            <?php echo $section[ 'submenu' ]; ?>
+
             <?php echo $section[ 'content' ]; ?>
             <?php if (!empty($section[ 'content_footer' ])): ?>
                 <?php echo $section[ 'content_footer' ]; ?>

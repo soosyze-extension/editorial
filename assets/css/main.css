@@ -60,7 +60,9 @@ input, select, textarea {
     -ms-appearance: none;
     appearance: none;
 }
-
+.img-thumbnail {
+    max-width: 100%;
+}
 /* Basic */
 
 @-ms-viewport {
